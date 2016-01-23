@@ -1,8 +1,12 @@
 {
   "name": "language-brightscript",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Brightscript language package for Atom",
-  "keywords": ["Brightscript","Roku","language"],
+  "keywords": [
+    "Brightscript",
+    "Roku",
+    "language"
+  ],
   "homepage": "https://github.com/Cwright017/atom-language-brightscript",
   "repository": {
     "type": "git",

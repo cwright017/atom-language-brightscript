@@ -1,6 +1,6 @@
 {
   "name": "language-brightscript",
-  "version": "0.4.0",
+  "version": "0.3.0",
   "description": "Brightscript language package for Atom",
   "keywords": [
     "Brightscript",

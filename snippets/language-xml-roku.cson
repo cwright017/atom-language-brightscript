@@ -91,24 +91,32 @@
         keyValue="[ [${4:0},${5:100}] ]"
         fieldToInterp="$6" />
     """
-  'script':
+  'Script':
     'prefix': 'script'
     'body': '<Script type="text/brightscript" uri="$1" />'
-  'interface':
+  'Interface':
     'prefix': 'interface'
     'body': """
       <Interface>
         ${1:field}
       </Interface>
     """
-  'field':
+  'Field':
     'prefix': 'field'
     'body': '<Field id="$1" type="$2" />$3'
-  'component':
+  'Component':
     'prefix': 'component'
     'body': """
       <?xml version="1.0" encoding="utf-8" ?>
         <Component name="$1" extends="${2:group}" >
           $2
       </Component>
+    """
+  'Timer':
+    'prefix': 'timer'
+    'body': """
+      <Timer
+        id="$1"
+        repeat="${1:true}"
+        duration="$3" />
     """

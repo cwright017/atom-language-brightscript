@@ -53,3 +53,62 @@
         height="$3"
         translation="[${4:0},${5:0}]" />
     """
+  'Animation':
+    'prefix': 'Animation'
+    'body': """
+      <Animation
+        id="$1"
+        duration="$2"
+        repeat="${3:false}"
+        easeFunction="${4:inOutCubic}" >
+        ${5:fieldInterpolatorNode}
+      </Animation>
+    """
+  'Vector2DFieldInterpolator':
+    'prefix': 'Vector2DFieldInterpolator'
+    'body': """
+      <Vector2DFieldInterpolator
+        id = "$1"
+        key="[${2:0}, ${3:100}]"
+        keyValue="[ [${4:0},${5:100}] ]"
+        fieldToInterp="$6" />
+    """
+  'FloatFieldInterpolator':
+    'prefix': 'FloatFieldInterpolator'
+    'body': """
+      <FloatFieldInterpolator
+        id = "$1"
+        key="[${2:0}, ${3:100}]"
+        keyValue="[ [${4:0},${5:100}] ]"
+        fieldToInterp="$6" />
+    """
+  'ColorFieldInterpolator':
+    'prefix': 'ColorFieldInterpolator'
+    'body': """
+      <ColorFieldInterpolator
+        id = "$1"
+        key="[${2:0}, ${3:100}]"
+        keyValue="[ [${4:0},${5:100}] ]"
+        fieldToInterp="$6" />
+    """
+  'script':
+    'prefix': 'script'
+    'body': '<Script type="text/brightscript" uri="$1" />'
+  'interface':
+    'prefix': 'interface'
+    'body': """
+      <Interface>
+        ${1:field}
+      </Interface>
+    """
+  'field':
+    'prefix': 'field'
+    'body': '<Field id="$1" type="$2" />$3'
+  'component':
+    'prefix': 'component'
+    'body': """
+      <?xml version="1.0" encoding="utf-8" ?>
+        <Component name="$1" extends="${2:group}" >
+          $2
+      </Component>
+    """

@@ -39,7 +39,7 @@
     'body': """
       <Rectangle
         id="$1"
-        color="$(2:#FFFFFF)"
+        color="${2:#FFFFFF}"
         width="$3"
         height="$4"
         translation="[${5:0},${6:0}]" />
@@ -54,7 +54,7 @@
         translation="[${4:0},${5:0}]" />
     """
   'Animation':
-    'prefix': 'Animation'
+    'prefix': 'animation'
     'body': """
       <Animation
         id="$1"
@@ -65,7 +65,7 @@
       </Animation>
     """
   'Vector2DFieldInterpolator':
-    'prefix': 'Vector2DFieldInterpolator'
+    'prefix': 'vector2DFieldInterpolator'
     'body': """
       <Vector2DFieldInterpolator
         id = "$1"
@@ -74,7 +74,7 @@
         fieldToInterp="$6" />
     """
   'FloatFieldInterpolator':
-    'prefix': 'FloatFieldInterpolator'
+    'prefix': 'floatFieldInterpolator'
     'body': """
       <FloatFieldInterpolator
         id = "$1"
@@ -83,7 +83,7 @@
         fieldToInterp="$6" />
     """
   'ColorFieldInterpolator':
-    'prefix': 'ColorFieldInterpolator'
+    'prefix': 'colorFieldInterpolator'
     'body': """
       <ColorFieldInterpolator
         id = "$1"
@@ -93,7 +93,7 @@
     """
   'Script':
     'prefix': 'script'
-    'body': '<Script type="text/brightscript" uri="$1" />'
+    'body': '<script type="text/brightscript" uri="$1" />'
   'Interface':
     'prefix': 'interface'
     'body': """
@@ -103,7 +103,7 @@
     """
   'Field':
     'prefix': 'field'
-    'body': '<Field id="$1" type="$2" />$3'
+    'body': '<field id="$1" type="$2" />$3'
   'Component':
     'prefix': 'component'
     'body': """

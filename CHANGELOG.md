@@ -1,2 +1,2 @@
-## 0.4.0 
-* Added xml language bundle and extended to include Roku snippets for SDK2 such as label, timer, field...
+## 0.6.1
+* Rectangle node was incorrectly formatted - Fixed. 

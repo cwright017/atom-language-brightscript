@@ -1,2 +1,2 @@
-## 0.1.0 - First Release
-* Converted textmate bundle - fixed broken capture groups
+## 0.3.0 
+* Added xml language bundle and extended to include Roku snippets for SDK2 such as label, timer, field...

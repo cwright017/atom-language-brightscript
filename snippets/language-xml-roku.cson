@@ -1,0 +1,55 @@
+'.text.xml':
+  'CDATA':
+    'prefix': 'cdata'
+    'body': '<![CDATA[$0]]>'
+  'XML Processing Instruction':
+    'prefix': 'xml'
+    'body': '<?xml version="1.0" encoding="UTF-8"?>'
+  'Long Attribute Tag':
+    'prefix': '<a'
+    'body': '<${1:name} ${2:attr}="${3:value}">$4\n</${1:name}>'
+  'Long Tag':
+    'prefix': '<'
+    'body': '<${1:name}>$2</${1:name}>'
+  'Short Tag':
+    'prefix': '>'
+    'body': '<${1:name} />'
+  'Label':
+    'prefix': 'label'
+    'body': """
+      <Label
+      id="$1"
+      height="$2"
+      width="$3"
+      text = "$4"
+      translation="[${5:0},${6:0}]" />
+    """
+  'Poster':
+    'prefix': 'poster'
+    'body': """
+      <Poster
+        id="$1"
+        uri="$2"
+        width="$3"
+        height="$4"
+        translation="[${5:0},${6:0}]" />
+    """
+  'Rectangle':
+    'prefix': 'rectangle'
+    'body': """
+      <Rectangle
+        id="$1"
+        color="$(2:#FFFFFF)"
+        width="$3"
+        height="$4"
+        translation="[${5:0},${6:0}]" />
+    """
+  'Video':
+    'prefix': 'video'
+    'body': """
+      <Video
+        id="$1"
+        width="$2"
+        height="$3"
+        translation="[${4:0},${5:0}]" />
+    """

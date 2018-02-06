@@ -94,23 +94,23 @@
   'Script':
     'prefix': 'script'
     'body': '<script type="text/brightscript" uri="$1" />'
-  'Interface':
+  'interface':
     'prefix': 'interface'
     'body': """
-      <Interface>
+      <interface>
         ${1:field}
-      </Interface>
+      </interface>
     """
   'Field':
     'prefix': 'field'
     'body': '<field id="$1" type="$2" />$3'
-  'Component':
+  'component':
     'prefix': 'component'
     'body': """
       <?xml version="1.0" encoding="utf-8" ?>
-        <Component name="$1" extends="${2:group}" >
+        <component name="$1" extends="${2:group}" >
           $2
-      </Component>
+      </component>
     """
   'Timer':
     'prefix': 'timer'
